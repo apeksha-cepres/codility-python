@@ -1,5 +1,5 @@
-def binary_gap(n):
-    binary_representation = bin(n)[2:]  # Convert to binary and remove the '0b' prefix
+def solution(N):
+    binary_representation = bin(N)[2:]  # Convert to binary and remove the '0b' prefix
     max_gap = 0
     current_gap = 0
     counting = False
@@ -17,5 +17,5 @@ def binary_gap(n):
     return max_gap
 
 # Example usage
-n = int(input("Enter a positive integer: "))
-print("Longest binary gap:", binary_gap(n))
+N = 1041
+print("Longest binary gap:", solution(N))
